@@ -28,7 +28,7 @@ document.write('\
   <a href="https://www.unbosque.edu.co/">\
     <img src="images/unbosque-logo.jpg" class="logo-right">\
   </a>\
-  <h1>Bases de Datos 2: RDBMS, NoSQL, BI, Aplicaciones</h1>\
+  <h1>Bases de Datos 2: RDBMS, NoSQL, DW</h1>\
   <h3>Universidad El Bosque, 2021-II</h3>\
   <div style="clear:both;"></div>\
 </div>\
