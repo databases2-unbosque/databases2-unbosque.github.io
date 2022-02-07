@@ -175,6 +175,10 @@ h3 {
   color: #FF0000;
 }
 
+ul {
+  margin-top: 10px;
+}
+
 /* Navbar color / spacing */
 
 .navbar-default {
