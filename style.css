@@ -1,8 +1,25 @@
+.light {
+  --sechi-bg: #f7f6f1;
+  --h2-color: #8DB33A;
+  --qq-color: #060;
+}
+
+.dark {
+  --body-bg: #20231B;
+  --sechi-bg: #2C331E;
+  --based-white: #E6E6E6;
+  --h2-color: #B5C78C;
+  --qq-color: #5B8055;
+  --qa-color: #939986;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 16px;
   padding-top: 70px;
+  /* variables change depending on if body has light or dark class */
+  background-color: var(--body-bg);
 }
 
 p {
@@ -12,6 +29,8 @@ p {
 #header {
   margin-top: 20px;
   margin-bottom: 20px;
+  /* variable changes depending on if body has light or dark class */
+  color: var(--based-white);
 }
 
 h1 {
@@ -24,7 +43,8 @@ h2 {
   font-size: 25px;
   /* font-weight: 300; */
   font-weight: bold;
-  color: #8DB33A;
+  /* variable changes depending on if body has light or dark class */
+  color: var(--h2-color);
 }
 
 h3 {
@@ -85,7 +105,10 @@ h3 {
 }
 
 .sechighlight {
-  background-color: #f7f6f1;
+/* variables change depending on if body has light or dark class */
+  background-color: var(--sechi-bg);
+  color: var(--based-white);
+
 }
 
 .tt {
@@ -142,11 +165,14 @@ h3 {
 }
 
 .qq {
-  color: #060;
+  /* variable changes depending on if body has light or dark class */
+  color: var(--qq-color);
 }
 
 .qa {
   font-style: italic;
+  /* variable changes depending on if body has light or dark class */
+  color: var(--qa-color);
 }
 
 .qqa {
