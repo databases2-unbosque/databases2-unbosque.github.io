@@ -164,6 +164,7 @@ thead th {
   border-bottom: var(--border) !important;
 }
 
+/* Tema para las filas de bloqueadas del syllabus*/
 .trlock {
     background-color: var(--sechi-bg);
   }
