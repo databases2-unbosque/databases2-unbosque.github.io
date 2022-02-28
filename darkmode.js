@@ -3,16 +3,15 @@ let sunBtn = document.getElementById('sunBtn');
 const themeBtnIcon = document.getElementById('themeBtnIcon');
 const body = document.body;
 
-function sunButton() {
+// funciones/closures
+const sunButton = () => {
 	moonBtn.style.display = 'none';
 	sunBtn.style.display = 'block';
 }
-function moonButton() {
+const moonButton = () => {
 	sunBtn.style.display = 'none';
 	moonBtn.style.display = 'block';
 }
-
-// funciones/closures
 const makeDark = () => {
 	body.classList.replace('light', 'dark');
 	localStorage.setItem('theme', 'dark');
@@ -32,6 +31,7 @@ sunBtn.onclick = makeLight;
 
 // condiciones para que se mantenga la oscuridad mediante cache localstorage
 window.onload = () => {
-	body.classList.replace('light | dark', localStorage.getItem('theme'));
+	body.classList.replace('light', localStorage.getItem('theme'));
+	body.classList.replace('dark', localStorage.getItem('theme'));
 	localStorage.getItem('theme') === 'dark' ? sunButton() : moonButton();
 }
