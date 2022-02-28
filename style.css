@@ -2,6 +2,8 @@
   --sechi-bg: #f7f6f1;
   --h2-color: #8DB33A;
   --qq-color: #060;
+  --border: 1px solid #ddd;
+  --border-color: #ddd;
 }
 
 .dark {
@@ -11,6 +13,8 @@
   --h2-color: #B5C78C;
   --qq-color: #5B8055;
   --qa-color: #939986;
+  --border: 1px solid #323a21;
+  --border-color: #323a21;
 }
 
 body {
@@ -102,6 +106,7 @@ h3 {
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: var(--based-white);
 }
 
 .sechighlight {
@@ -146,6 +151,22 @@ h3 {
   background-color: rgb(85, 187, 85);
   overflow: visible !important;
 }
+
+th {
+  background-color: var(--sechi-bg) !important;
+}
+
+td {
+  border-top: var(--border) !important;
+}
+
+thead th {
+  border-bottom: var(--border) !important;
+}
+
+.trlock {
+    background-color: var(--sechi-bg);
+  }
 
 #convask {
   position: absolute;
@@ -209,7 +230,7 @@ ul {
 
 .navbar-default {
   background-color: #8DB33A;
-  border-color: rgb(255, 255, 255);
+  border-color: var(--border-color);
   text-align: center;
 }
 
