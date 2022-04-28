@@ -18,6 +18,8 @@ document.write('\
         <li><a href="index.html#overview">Contenido</a></li>\
         <li><a href="syllabus.html">Programa</a></li>\
         <li><a href="index.html#faq">FAQ</a></li>\
+	<li id="moonBtn" style="cursor: pointer;"><a><i id="themeBtnIcon" class="fas fa-moon" aria-hidden="true"></i></a></li>\
+	<li id="sunBtn" style="cursor: pointer; display: none;"><a><i id="themeBtnIcon" class="fas fa-sun" aria-hidden="true"></i></a></li>\
       </ul>\
     </div>\
   </div>\
